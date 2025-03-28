@@ -207,5 +207,9 @@ for company_idx, pdf_file in enumerate(pdf_files):
     insight = generate_insight(prompt, indicators_list[company_idx])
     print(insight)
 
+!zip -r financial_model.zip ./financial_model
+files.download("financial_model.zip")
 #click on cancel to use the code without uplading any file.
 #it will continue with already uploaded files to my drive
+
+
